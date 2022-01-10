@@ -22,12 +22,12 @@ public class Jdbc1Query01 {
 		Connection con =DriverManager.getConnection("jdbc:mysql://localhost:3306/sys?serverTimezone=UTC", "root", "1012");
 		
 		//3) SQL komutları için bir Statement nesnesi oluştur her kanal için kumanda da yer ayarlamak
-	       Statement st=      con.createStatement();
+	       Statement st= con.createStatement();
 	       
 	   //SQL ifadeleri yazabilir ve çalıştırabiliriz kumanda da 1 e basarım trt1 gelir    
 	       
 	    ResultSet veri=   st.executeQuery("SELECT isim, maas FROM personel WHERE id=123456789");
-	       
+	    				// Burasi onemli
 	       
 	   // 5) sonuçları aldık ve işledik
 	       
