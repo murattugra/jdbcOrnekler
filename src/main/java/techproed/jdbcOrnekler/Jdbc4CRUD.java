@@ -104,6 +104,8 @@ public class Jdbc4CRUD {
 	    System.out.println("Urunler tablosu silindi");
 	    
 	    
+		   con.close();
+		   st.close();
 		   
 		
 	}
